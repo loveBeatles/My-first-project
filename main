@@ -1,0 +1,13 @@
+items = {"Bubblegum": 202, "Toffee": 118, "Ice cream": 2250, "Milk chocolate": 1680,
+         "Doughnut": 1075, "Pancake": 80}
+earned_sum = sum(items.values())
+print("Earned amount:")
+
+for key, value in items.items():
+    print(f"{key}: ${value}")
+
+print(f"\nIncome: ${earned_sum}")
+staff_expenses = int(input("Staff expenses:\n"))
+other_expenses = int(input("Other expenses:\n"))
+net_income = earned_sum - staff_expenses - other_expenses
+print("Net income: $", net_income)
